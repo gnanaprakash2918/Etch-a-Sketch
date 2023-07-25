@@ -4,9 +4,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --grid-width: 560px;
+  --grid-height: 560px;
+}
+
 .grid-container {
-  height: 560px;
-  width: 560px;
+  height: var(--grid-height);
+  width: var(--grid-width);
   border: 2px solid red;
   margin: 5.25rem auto;
+}
+
+.inner-container {
+  width: 2px;
 }
