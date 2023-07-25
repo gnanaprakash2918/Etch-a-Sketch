@@ -12,10 +12,12 @@
 .grid-container {
   height: var(--grid-height);
   width: var(--grid-width);
-  border: 2px solid red;
+  border: 2px solid black;
   margin: 5.25rem auto;
 }
 
 .inner-container {
-  width: 2px;
+  border: 1px solid grey;
+  /* width: var(--grid-width);
+  height: 20px; */
 }
