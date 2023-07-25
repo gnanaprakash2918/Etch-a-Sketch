@@ -3,3 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.grid-container {
+  height: 580px;
+  width: 580px;
+  border: 2px solid red;
+  margin: 5rem auto;
+}
