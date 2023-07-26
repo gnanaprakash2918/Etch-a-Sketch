@@ -1,6 +1,6 @@
 const gridContainer = document.querySelector(".grid-container");
 
-const GRID_SIZE = 12;
+const GRID_SIZE = 32;
 
 const GRID_WIDTH = Number(
   getComputedStyle(document.body)
@@ -31,9 +31,12 @@ for (let i = 0; i < GRID_SIZE; i++) {
 
 const columns = Array.from(document.querySelectorAll(".column-container"));
 
+const generateRandom = function () {
+  return Math.random() * 256;
+};
+
 const changeBG = function (event) {
-  console.log("hfd");
-  event.target.style.backgroundColor = "red";
+  event.target.style.backgroundColor = `rgb(${generateRandom()},${generateRandom()},${generateRandom()})`;
 };
 
 columns.forEach((item) => {
