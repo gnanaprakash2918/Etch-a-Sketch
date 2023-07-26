@@ -28,3 +28,14 @@ for (let i = 0; i < GRID_SIZE; i++) {
 
   gridContainer.appendChild(rowContainer);
 }
+
+const columns = Array.from(document.querySelectorAll(".column-container"));
+
+const changeBG = function (event) {
+  console.log("hfd");
+  event.target.style.backgroundColor = "red";
+};
+
+columns.forEach((item) => {
+  item.addEventListener("mouseover", changeBG);
+});
