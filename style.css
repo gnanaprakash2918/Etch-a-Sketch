@@ -5,19 +5,22 @@
 }
 
 :root {
-  --grid-width: 560px;
-  --grid-height: 560px;
+  --grid-width: 540px;
+  --grid-height: 540px;
 }
 
 .grid-container {
   height: var(--grid-height);
   width: var(--grid-width);
-  border: 2px solid black;
+  border: 1px solid black;
   margin: 5.25rem auto;
 }
 
-.inner-container {
+.row-container {
+  display: flex;
+  flex: 1;
+}
+
+.column-container {
   border: 1px solid grey;
-  /* width: var(--grid-width);
-  height: 20px; */
 }
