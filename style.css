@@ -5,14 +5,13 @@
 }
 
 :root {
-  --grid-width: 640px;
-  --grid-height: 640px;
+  --grid-width: 650px;
+  --grid-height: 650px;
 }
 
 .grid-container {
   height: var(--grid-height);
   width: var(--grid-width);
-  border: 1px solid black;
   margin: 5.25rem auto;
   display: flex;
   flex-direction: column;
@@ -24,6 +23,16 @@
 }
 
 .column-container {
-  border: 1px solid grey;
+  border: 2px solid grey;
   flex: 1;
+}
+
+.outer-container {
+  height: 700px;
+  width: 700px;
+  margin: 5.25rem auto;
+  border: 25px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
