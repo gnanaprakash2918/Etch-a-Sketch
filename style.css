@@ -5,8 +5,8 @@
 }
 
 :root {
-  --grid-width: 650px;
-  --grid-height: 650px;
+  --grid-width: 640px;
+  --grid-height: 640px;
 }
 
 .grid-container {
