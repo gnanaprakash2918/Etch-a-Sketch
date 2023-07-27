@@ -49,7 +49,7 @@ const changeBG = function (event) {
   event.target.style.backgroundColor = `rgb(${generateRandom()},${generateRandom()},${generateRandom()})`;
 };
 
-setGridSize(25);
+setGridSize(16);
 
 const gridSizeBtn = document.querySelector(".grid-size-adjust");
 const resetColorBtn = document.querySelector(".reset-btn");
