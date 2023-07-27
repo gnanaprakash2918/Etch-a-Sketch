@@ -46,3 +46,12 @@ h1 {
   margin-top: 40px;
   font-size: 4rem;
 }
+
+.outer-container {
+  display: flex;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+}
