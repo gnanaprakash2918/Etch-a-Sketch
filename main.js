@@ -10,6 +10,11 @@ const GRID_HEIGHT = Number(
     .replace("px", "")
 );
 
+function clearGrid() {
+  const gridContainer = document.querySelector(".grid-container");
+  gridContainer.innerHTML = "";
+}
+
 function setGridSize(GRID_SIZE) {
   const gridContainer = document.querySelector(".grid-container");
 
@@ -48,14 +53,13 @@ const gridSizeBtn = document.querySelector(".grid-size-adjust");
 const resetColorBtn = document.querySelector(".reset-btn");
 
 gridSizeBtn.addEventListener("click", () => {
-  const dimension = Number(
-    prompt("Enter Grid Dimensions (range 1 to 100) : ", 16)
-  );
-  if (dimension >= 1 && dimension <= 100) setGridSize(dimension);
-  else {
-    while (dimension < 1 || dimension > 100)
-      dimension = Number(
-        prompt("Enter Grid Dimensions (range 1 to 100) : ", 16)
-      );
+  let dimension = -1;
+
+  while (dimension < 1 || dimension > 100) {
+    dimension = Number(prompt("Enter Grid Dimensions (range 1 to 100) : ", 16));
+    if (dimension < 1 || dimension > 100)
+      alert("Enter valid value in range(1 to 100) : ");
   }
+  clearGrid();
+  setGridSize(dimension);
 });
