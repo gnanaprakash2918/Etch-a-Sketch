@@ -1,6 +1,6 @@
 const gridContainer = document.querySelector(".grid-container");
 
-const GRID_SIZE = 32;
+const GRID_SIZE = 50;
 
 const GRID_WIDTH = Number(
   getComputedStyle(document.body)

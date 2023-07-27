@@ -23,14 +23,14 @@
 }
 
 .column-container {
-  border: 2px solid grey;
+  border: 1px solid grey;
   flex: 1;
 }
 
 .outer-container {
   height: 700px;
   width: 700px;
-  margin: 5.25rem auto;
+  margin: 2rem auto;
   border: 25px solid black;
   display: flex;
   justify-content: center;
@@ -39,4 +39,10 @@
 
 .hover-event {
   background-color: green;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 4rem;
 }
