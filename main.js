@@ -58,7 +58,9 @@ gridSizeBtn.addEventListener("click", () => {
   let dimension = -1;
 
   while (dimension < 1 || dimension > 100) {
-    dimension = Number(prompt("Enter Grid Dimensions (range 1 to 100) : ", 16));
+    dimension = Number(
+      prompt("Enter Grid Dimensions (range 1 to 100) : ", currentGridSize)
+    );
     if (dimension < 1 || dimension > 100)
       alert("Enter valid value in range(1 to 100) : ");
   }
