@@ -43,3 +43,19 @@ const changeBG = function (event) {
 };
 
 setGridSize(25);
+
+const gridSizeBtn = document.querySelector(".grid-size-adjust");
+const resetColorBtn = document.querySelector(".reset-btn");
+
+gridSizeBtn.addEventListener("click", () => {
+  const dimension = Number(
+    prompt("Enter Grid Dimensions (range 1 to 100) : ", 16)
+  );
+  if (dimension >= 1 && dimension <= 100) setGridSize(dimension);
+  else {
+    while (dimension < 1 || dimension > 100)
+      dimension = Number(
+        prompt("Enter Grid Dimensions (range 1 to 100) : ", 16)
+      );
+  }
+});
