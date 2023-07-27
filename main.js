@@ -1,3 +1,5 @@
+let currentGridSize = 16;
+
 const GRID_WIDTH = Number(
   getComputedStyle(document.body)
     .getPropertyValue("--grid-width")
@@ -62,4 +64,14 @@ gridSizeBtn.addEventListener("click", () => {
   }
   clearGrid();
   setGridSize(dimension);
+  currentGridSize = dimension;
+});
+
+resetColorBtn.addEventListener("click", () => {
+  const rowContainer = Array.from(document.querySelectorAll(".row-container"));
+  rowContainer.forEach((row) => {
+    Array.from(row.children).forEach((col) => {
+      col.style.backgroundColor = "white";
+    });
+  });
 });
